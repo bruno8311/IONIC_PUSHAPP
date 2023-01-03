@@ -16,7 +16,7 @@ export class HomePage implements OnInit {
 
   ngOnInit(){
     this.pushService.pushListener.subscribe( data=>{
-
+      console.log("BIENVENIDO")
       this.mensajes.unshift(data);
       this.applicacionRef.tick(); //LE DICE A ANGULAR QUE HAGA EL CICLO DE DETECCION NUEVANTE, VERIFICANDO QUE SE HAYA INSERTADO LA NOTIFICAICON EN EL ARRGELO
     }
